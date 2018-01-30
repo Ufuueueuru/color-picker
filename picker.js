@@ -8,21 +8,21 @@ function setup() {
 function draw() {
 	//background(255-mouseX,255-mouseY,255-b);
 	background(150);
-	for(var r = 0;r < 255; r+=5) {
-		for(var g = 0;g < 255; g+=5) {
+	for(var r = 0;r < 255; r+=8) {
+		for(var g = 0;g < 255; g+=8) {
 			fill(r, g, b);
 			noStroke();
-			rect(r, g, 5, 5);
+			rect(r, g, 8, 8);
 		}
 	}
 	fill(mouseX, mouseY, b);
 	rect(260, 260, 35, 35);
-	for(var i = 0;i < 255;i += 5) {
+	for(var i = 0;i < 255;i += 8) {
 		fill(0, 0, i);
-		rect(260, i, 35, 5);
+		rect(260, i, 35, 8);
 	}
 	fill(0);
-	rect(260, b-5, 35, 5);
+	rect(260, b-8, 35, 8);
 	rect(constrain(mouseX,5,255)-5,constrain(mouseY,5,255)-5,5,5);
 	textSize(15);
 	text(constrain(mouseX,0,255) +"," + constrain(mouseY,0,255) + "," + constrain(b,0,255),10,280);
