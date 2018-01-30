@@ -22,7 +22,7 @@ function draw() {
 		rect(260, i, 35, 10);
 	}
 	fill(0);
-	rect(260, b-10, 35, 5);
+	rect(260, b, 35, 5);
 	rect(constrain(mouseX,3,257)-3,constrain(mouseY,3,257)-3,6,6);
 	textSize(15);
 	text(constrain(round(mouseX),0,255) +"," + constrain(mouseY,0,255) + "," + constrain(b,0,255),10,280);
