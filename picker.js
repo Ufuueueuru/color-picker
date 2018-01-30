@@ -23,7 +23,7 @@ function draw() {
 	}
 	fill(0);
 	rect(260, b-12, 35, 12);
-	rect(constrain(mouseX,12,255)-12,constrain(mouseY,12,255)-12,12,12);
+	rect(constrain(mouseX,12,255)-3,constrain(mouseY,12,255)-3,6,6);
 	textSize(15);
 	text(constrain(mouseX,0,255) +"," + constrain(mouseY,0,255) + "," + constrain(b,0,255),10,280);
 	if(mouseX >= 260 && mouseY <= 255 && mouseIsPressed && mouseX <= 295 && mouseY >= 0) {
